@@ -1,0 +1,22 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<!-- 配置父 -->
+    <parent>
+        <groupId>com.lodsve</groupId>
+        <artifactId>lodsve-framework</artifactId>
+        <version>2.6.7-RELEASE</version>
+        <relativePath/>
+    </parent>
+
+	<artifactId>lodsve-maven-archetype</artifactId>
+    <version>1.0.0-RELEASE</version>
+	<name>Lodsve Maven Archetype</name>
+	<description>Lodsve Maven Archetype</description>
+	<url>http://maven.apache.org</url>
+
+    <modules>
+        <module>lodsve-maven-archetype-webapp</module>
+    </modules>
+</project>
