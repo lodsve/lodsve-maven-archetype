@@ -7,7 +7,7 @@
         <groupId>com.lodsve</groupId>
         <artifactId>lodsve-maven-archetype</artifactId>
         <version>1.0.0-RELEASE</version>
-        <relativePath/>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>lodsve-maven-archetype-webapp</artifactId>

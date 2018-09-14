@@ -13,6 +13,7 @@
 	<artifactId>lodsve-maven-archetype</artifactId>
     <version>1.0.0-RELEASE</version>
 	<name>Lodsve Maven Archetype</name>
+    <packaging>pom</packaging>
 	<description>Lodsve Maven Archetype</description>
 	<url>http://maven.apache.org</url>
 
