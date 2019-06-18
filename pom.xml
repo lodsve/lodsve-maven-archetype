@@ -5,13 +5,13 @@
 	<!-- 配置父 -->
     <parent>
         <groupId>com.lodsve</groupId>
-        <artifactId>lodsve-framework</artifactId>
-        <version>2.7.4-RELEASE</version>
+        <artifactId>lodsve-parent</artifactId>
+        <version>1.0.0-RELEASE</version>
         <relativePath/>
     </parent>
 
 	<artifactId>lodsve-maven-archetype</artifactId>
-    <version>1.0.1-RELEASE</version>
+    <version>1.0.2-RELEASE</version>
 	<name>Lodsve Maven Archetype</name>
     <packaging>pom</packaging>
 	<description>Lodsve Maven Archetype</description>
@@ -20,4 +20,17 @@
     <modules>
         <module>lodsve-maven-archetype-webapp</module>
     </modules>
+
+    <!-- issue -->
+    <issueManagement>
+        <system>Github Issue</system>
+        <url>https://github.com/lodsve/lodsve-maven-archetype/issues</url>
+    </issueManagement>
+
+    <!-- 代码库 -->
+    <scm>
+        <connection>scm:git:git@github.com:lodsve/lodsve-maven-archetype.git</connection>
+        <developerConnection>scm:git:git@github.com:lodsve/lodsve-maven-archetype.git</developerConnection>
+        <url>git@github.com:lodsve/lodsve-maven-archetype.git</url>
+    </scm>
 </project>
