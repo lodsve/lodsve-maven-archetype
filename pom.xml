@@ -6,12 +6,12 @@
     <parent>
         <groupId>com.lodsve</groupId>
         <artifactId>lodsve-framework</artifactId>
-        <version>2.6.7-RELEASE</version>
+        <version>2.7.4-RELEASE</version>
         <relativePath/>
     </parent>
 
 	<artifactId>lodsve-maven-archetype</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-RELEASE</version>
 	<name>Lodsve Maven Archetype</name>
     <packaging>pom</packaging>
 	<description>Lodsve Maven Archetype</description>
