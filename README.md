@@ -1,4 +1,6 @@
 # Maven archetypes to create a project with lodsve-framework!
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype?ref=badge_shield)
+
 1. lodsve-maven-archetype-webapp
     
          mvn archetype:generate 
@@ -22,3 +24,6 @@
     - lodsveVersion: the version of Lodsve's version
     - basePackage: base package
     - author: author of this project
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype?ref=badge_large)
