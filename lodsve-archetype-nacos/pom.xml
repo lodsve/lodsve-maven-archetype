@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 配置父 -->
+    <parent>
+        <groupId>com.lodsve.archetype</groupId>
+        <artifactId>lodsve-maven-archetype</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>lodsve-archetype-nacos</artifactId>
+    <name>Lodsve Archetype with Nacos</name>
+
+    <properties>
+        <main.user.dir>${basedir}/..</main.user.dir>
+    </properties>
+</project>

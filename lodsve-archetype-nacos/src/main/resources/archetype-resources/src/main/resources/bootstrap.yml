@@ -1,0 +1,30 @@
+server:
+  port: ${port}
+  servlet:
+    context-path: ${contextPath}
+
+spring:
+  application:
+    name: ${artifactId}
+  cloud:
+    nacos:
+      config:
+        # 启用
+        enabled: true
+        # nacos地址
+        server-addr: http://localhost:8848
+        # nacos的namespace
+        namespace: nacos-namespace
+        # nacos上的group
+        group: nacos-config-group
+        # 自动拉取配置
+        refresh-enabled: false
+        # 文件后缀，也就是默认会拉取一个上面指定namespace下指定group下的一个${spring.application.name}.yml的文件
+        file-extension: yml
+        # 其他配置，指的是拉取该namespace下指定group下的application.yml文件
+        extension-configs:
+          # 文件名
+          - data-id: application.yml
+            # 是否自动刷新，关闭！
+            refresh: false
+            group: nacos-config-group

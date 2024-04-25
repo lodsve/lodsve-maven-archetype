@@ -1,0 +1,40 @@
+server:
+  port: ${port}
+  servlet:
+    context-path: ${contextPath}
+
+lodsve:
+  swagger:
+    enabled: true
+  web-mvc:
+    is-debug: true
+  rdbms:
+    data-source:
+      demo:
+        pool-name: demo-datasource
+        url: jdbc:mysql://127.0.0.1:3306/demo
+        username: root
+        password: 123456
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        pool-setting:
+          type: Hikari
+          max-active: 10
+          ext-properties:
+            connectionInitSql: select 1
+
+logging:
+  level:
+    com.lodsve: DEBUG
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include:
+          - versions
+          - enums
+          - dependencies
+  endpoint:
+    health:
+      show-details: always

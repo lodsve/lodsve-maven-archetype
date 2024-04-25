@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${package}.dao.DemoDAO">
+    <resultMap id="BaseResultMap" type="${package}.pojo.po.DemoPO">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="created_by" jdbcType="BIGINT" property="createdBy"/>
+        <result column="created_date" jdbcType="TIMESTAMP" property="createdDate"/>
+        <result column="last_modified_by" jdbcType="BIGINT" property="lastModifiedBy"/>
+        <result column="last_modified_date" jdbcType="TIMESTAMP" property="lastModifiedDate"/>
+        <result column="remarks" jdbcType="VARCHAR" property="remarks"/>
+        <result column="enabled" jdbcType="BIT" property="enabled"/>
+        <result column="version" jdbcType="INTEGER" property="version"/>
+        <result column="disabled_date" jdbcType="TIMESTAMP" property="disabledDate"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        <!-- 正式写代码，这里不要用* -->
+        SELECT * FROM t_demo WHERE 1 = 1
+        <if test="query.name != null and query.name != ''">
+            AND name LIKE CONCAT(#{query.name},'%')
+        </if>
+    </select>
+</mapper>
