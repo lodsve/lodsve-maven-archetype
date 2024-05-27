@@ -26,5 +26,10 @@ if "%profile%"=="release-lodsve" (
     echo The password for the gpg key to publish the maven repository cannot be empty.
     exit /b 1
   )
-  ../mvnw.cmd clean deploy -P %1 -Dgpg.passphrase=%2 -Dmaven.test.skip=false
+
+  if not "%profile%"=="release-oss-snapshot" (
+      REM publish snapshot
+      set args=-Dgpg.passphrase=$2 -Dmaven.test.skip=false
+    )
+    ..\mvnw.cmd clean deploy -P %1 %args%
 )
