@@ -30,7 +30,7 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <revision>1.0.3-SNAPSHOT</revision>
+        <revision>1.0.3</revision>
 
         <!-- 基本属性 -->
         <project.encoding>UTF-8</project.encoding>
