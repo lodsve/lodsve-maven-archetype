@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+         https://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+            http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.lodsve.boot</groupId>
+        <artifactId>lodsve-boot-dependencies</artifactId>
+        <version>${bootVersion}</version>
+    </parent>
+
+    <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
+    <version>${version}</version>
+    <name>${artifactId}</name>
+    <packaging>jar</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+
+        <docker.image.name>${project.groupId}/${project.artifactId}</docker.image.name>
+        <docker.image.tag>${project.version}</docker.image.tag>
+    </properties>
+
+    <dependencies>
+        <!-- lodsve boot start -->
+        <dependency>
+            <groupId>com.lodsve.boot</groupId>
+            <artifactId>lodsve-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lodsve.boot</groupId>
+            <artifactId>lodsve-boot-starter-webmvc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lodsve.boot</groupId>
+            <artifactId>lodsve-boot-starter-swagger</artifactId>
+        </dependency>
+        <!-- lodsve boot end -->
+
+        <dependency>
+            <groupId>${apiGroupId}</groupId>
+            <artifactId>${apiArtifactId}</artifactId>
+            <version>${apiVersion}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <!--
+                mvn package
+                mvn dockerfile:build
+                -->
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.10</version>
+                <configuration>
+                    <repository>${docker.image.name}</repository>
+                    <tag>${docker.image.tag}</tag>
+                    <buildArgs>
+                        <JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
+                        <IMAGE_VERSION>${docker.image.tag}</IMAGE_VERSION>
+                    </buildArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>default-center</id>
+            <name>default center</name>
+            <url>http://repo1.maven.org/maven2</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+</project>

@@ -65,18 +65,70 @@
       -DarchetypeArtifactId=lodsve-archetype-nacos
       -DarchetypeVersion=${archetypeVersion}   
       
-   # ${archetypeVersion}: 此脚手架最新版本号
+   ### 4. RPC（顺序：api -> server -> client）
+   ### 4.1. RPC-api
+   mvn archetype:generate
+      -DgroupId=com.xxx
+      -DartifactId=xxx-api
+      -Dversion=1.0-SNAPSHOT
+      -Dpackage=com.xxx
+      -Dauthor=hulk.sun
+      -DbootVersion=1.0.0-SNAPSHOT
+      -DserverAppName=demo-server
+      -DserverContextPath=/demo-server
+      -DarchetypeGroupId=com.lodsve.archetype
+      -DarchetypeArtifactId=lodsve-archetype-rpc-api
+      -DarchetypeVersion=${archetypeVersion} 
+   ### 4.2. RPC-server
+   mvn archetype:generate
+      -DgroupId=com.xxx
+      -DartifactId=xxx-server
+      -Dversion=1.0-SNAPSHOT
+      -Dport=8080
+      -DcontextPath=/xxx
+      -Dpackage=com.xxx
+      -Dauthor=haoke.sun
+      -DbootVersion=1.0.0-SNAPSHOT
+      -DapiGroupId=com.xxx
+      -DapiArtifactId=xxx-api
+      -DapiVersion=1.0-SNAPSHOT
+      -DarchetypeGroupId=com.lodsve.archetype
+      -DarchetypeArtifactId=lodsve-archetype-rpc-server
+      -DarchetypeVersion=${archetypeVersion}
+   ### 4.3. RPC-client
+   mvn archetype:generate
+      -DgroupId=com.xxx
+      -DartifactId=xxx-client
+      -Dversion=1.0-SNAPSHOT
+      -Dport=8081
+      -DcontextPath=/xxx
+      -Dpackage=com.xxx
+      -Dauthor=haoke.sun
+      -DbootVersion=1.0.0-SNAPSHOT
+      -DapiGroupId=com.xxx
+      -DapiArtifactId=xxx-api
+      -DapiVersion=1.0-SNAPSHOT
+      -DarchetypeGroupId=com.lodsve.archetype
+      -DarchetypeArtifactId=lodsve-archetype-rpc-client
+      -DarchetypeVersion=${archetypeVersion}
+      
+   # ${archetypeVersion}: The latest version number of this scaffold.
    ```         
 
-2. 参数解释
+2. Parameter explanation
 
-   | 参数名 | 描述 | 示例值 |
-               |-------------|---------------------|-----------------|
-   | groupId | 要创建工程的groupId | com.lodsve |
-   | artifactId | 要创建工程的artifactId | demo |
-   | version | 要创建工程的version | 1.0.0-SNAPSHOT |
-   | port | SpringBoot工程的port | 8080 |
-   | contextPath | context path | /demo |
-   | package | 要创建工程的base package | com.lodsve.demo |
-   | author | 要创建工程的作者 | hulk.sun |
-   | bootVersion | 使用`lodsve-boot`的版本号 | 1.0.0-SNAPSHOT |
+| Parameter Name    | Description                                                         | Example Value   |
+                     |-------------------|---------------------------------------------------------------------|-----------------|
+| groupId           | The groupId for the project to be created                           | com.lodsve      |
+| artifactId        | The artifactId for the project to be created                        | demo            |
+| version           | The version for the project to be created	                          | 1.0.0-SNAPSHOT  |
+| port              | Port for the Spring Boot project	                                   | 8080            |
+| contextPath       | Context path	                                                       | /demo           |
+| package           | Base package for the project to be created                          | com.lodsve.demo |
+| author            | Author of the project to be created                                 | hulk.sun        |
+| bootVersion       | Version number of lodsve-boot to be used                            | 1.0.0-SNAPSHOT  |
+| apiGroupId        | The groupId for the API package to be created (only used in RPC)    | com.lodsve.demo |
+| apiArtifactId     | The artifactId for the API package to be created (only used in RPC) | demo-api        |
+| apiVersion        | The version for the API package to be created (only used in RPC)    | 1.0.-SNAPSHOT   |
+| serverAppName     | Value of spring.application.name configured on the server side      | demo-server     |
+| serverContextPath | Context path for the server side                                    | /demo-server    |

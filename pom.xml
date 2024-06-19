@@ -30,7 +30,7 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <revision>1.0.3</revision>
+        <revision>1.0.4-SNAPSHOT</revision>
 
         <!-- 基本属性 -->
         <project.encoding>UTF-8</project.encoding>
@@ -508,8 +508,11 @@
     </profiles>
 
     <modules>
-        <module>lodsve-archetype-quickstart</module>
-        <module>lodsve-archetype-nacos</module>
         <module>lodsve-archetype-mybatis</module>
+        <module>lodsve-archetype-nacos</module>
+        <module>lodsve-archetype-quickstart</module>
+        <module>lodsve-archetype-rpc-api</module>
+        <module>lodsve-archetype-rpc-client</module>
+        <module>lodsve-archetype-rpc-server</module>
     </modules>
 </project>
