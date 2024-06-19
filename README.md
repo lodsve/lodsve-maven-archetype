@@ -132,3 +132,11 @@
 | apiVersion        | The version for the API package to be created (only used in RPC)    | 1.0.-SNAPSHOT   |
 | serverAppName     | Value of spring.application.name configured on the server side      | demo-server     |
 | serverContextPath | Context path for the server side                                    | /demo-server    |
+
+## Thanks
+
+The `lodsve-maven-archetype` was created using awesome [JetBrains IDEA][].
+
+![JetBrains logo](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)
+
+[JetBrains IDEA]: https://www.jetbrains.com/?from=lodsve-maven-archetype

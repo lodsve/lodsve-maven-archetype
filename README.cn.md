@@ -118,7 +118,7 @@
 2. 参数解释
 
    | 参数名               | 描述                             | 示例值             |
-                  |-------------------|--------------------------------|-----------------|
+                           |-------------------|--------------------------------|-----------------|
    | groupId           | 要创建工程的groupId                  | com.lodsve      |
    | artifactId        | 要创建工程的artifactId               | demo            |
    | version           | 要创建工程的version                  | 1.0.0-SNAPSHOT  |
@@ -132,3 +132,11 @@
    | apiVersion        | 创建的API包版本号（仅在RPC使用）            | 1.0.-SNAPSHOT   |
    | serverAppName     | 服务端配置的spring.application.name值 | demo-server     |
    | serverContextPath | 服务端contextPath                 | /demo-server    |
+
+## Thanks
+
+`lodsve-maven-archetype` 是基于 [JetBrains IDEA][] 创建的。
+
+![JetBrains logo](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)
+
+[JetBrains IDEA]: https://www.jetbrains.com/?from=lodsve-maven-archetype
