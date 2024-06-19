@@ -118,11 +118,11 @@
 2. 参数解释
 
    | 参数名               | 描述                             | 示例值             |
-                              |-------------------|--------------------------------|-----------------|
+   |-------------------|-------------------------------------|-----------------|
    | groupId           | 要创建工程的groupId                  | com.lodsve      |
    | artifactId        | 要创建工程的artifactId               | demo            |
    | version           | 要创建工程的version                  | 1.0.0-SNAPSHOT  |
-   | port              | SpringBoot工程的port              | 8080            |
+   | port              | SpringBoot工程的port                 | 8080            |
    | contextPath       | context path                   | /demo           |
    | package           | 要创建工程的base package             | com.lodsve.demo |
    | author            | 要创建工程的作者                       | hulk.sun        |
