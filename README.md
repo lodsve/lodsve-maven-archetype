@@ -118,12 +118,12 @@
 2. Parameter explanation
 
 | Parameter Name    | Description                                                         | Example Value   |
-                     |-------------------|---------------------------------------------------------------------|-----------------|
+|-------------------|---------------------------------------------------------------------|-----------------|
 | groupId           | The groupId for the project to be created                           | com.lodsve      |
 | artifactId        | The artifactId for the project to be created                        | demo            |
-| version           | The version for the project to be created	                          | 1.0.0-SNAPSHOT  |
-| port              | Port for the Spring Boot project	                                   | 8080            |
-| contextPath       | Context path	                                                       | /demo           |
+| version           | The version for the project to be created	                        | 1.0.0-SNAPSHOT  |
+| port              | Port for the Spring Boot project	                                 | 8080            |
+| contextPath       | Context path	                                                      | /demo           |
 | package           | Base package for the project to be created                          | com.lodsve.demo |
 | author            | Author of the project to be created                                 | hulk.sun        |
 | bootVersion       | Version number of lodsve-boot to be used                            | 1.0.0-SNAPSHOT  |
