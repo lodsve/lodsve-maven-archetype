@@ -133,6 +133,8 @@
 | serverAppName     | Value of spring.application.name configured on the server side      | demo-server     |
 | serverContextPath | Context path for the server side                                    | /demo-server    |
 
+## License Check
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype?ref=badge_large&issueType=license)
 
 ## Thanks
