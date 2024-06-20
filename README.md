@@ -5,7 +5,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/lodsve/lodsve-maven-archetype.svg)](https://github.com/lodsve/lodsve-maven-archetype/network)
 [![GitHub issues](https://img.shields.io/github/issues/lodsve/lodsve-maven-archetype.svg)](https://github.com/lodsve/lodsve-maven-archetype/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/lodsve/lodsve-maven-archetype.svg)](https://github.com/lodsve/lodsve-maven-archetype/pulls)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype?ref=badge_shield&issueType=license)
 
 ## Component Versions
 
@@ -121,9 +121,9 @@
 |-------------------|---------------------------------------------------------------------|-----------------|
 | groupId           | The groupId for the project to be created                           | com.lodsve      |
 | artifactId        | The artifactId for the project to be created                        | demo            |
-| version           | The version for the project to be created	                        | 1.0.0-SNAPSHOT  |
-| port              | Port for the Spring Boot project	                                 | 8080            |
-| contextPath       | Context path	                                                      | /demo           |
+| version           | The version for the project to be created	                          | 1.0.0-SNAPSHOT  |
+| port              | Port for the Spring Boot project	                                   | 8080            |
+| contextPath       | Context path	                                                       | /demo           |
 | package           | Base package for the project to be created                          | com.lodsve.demo |
 | author            | Author of the project to be created                                 | hulk.sun        |
 | bootVersion       | Version number of lodsve-boot to be used                            | 1.0.0-SNAPSHOT  |
@@ -132,6 +132,8 @@
 | apiVersion        | The version for the API package to be created (only used in RPC)    | 1.0.-SNAPSHOT   |
 | serverAppName     | Value of spring.application.name configured on the server side      | demo-server     |
 | serverContextPath | Context path for the server side                                    | /demo-server    |
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Flodsve%2Flodsve-maven-archetype?ref=badge_large&issueType=license)
 
 ## Thanks
 
