@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-FROM adoptopenjdk/openjdk11
+FROM eclipse-temurin:21-jre
 
 ARG IMAGE_VERSION
 ARG JAR_FILE

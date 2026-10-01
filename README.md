@@ -1,5 +1,7 @@
 # Maven archetypes to create a project with lodsve-boot!
 
+源码构建需要 JDK 21；生成应用的 JDK 版本由所选 Lodsve Boot 版本和应用依赖决定。
+
 [![LICENSE](https://img.shields.io/github/license/lodsve/lodsve-maven-archetype)](https://github.com/lodsve/lodsve-maven-archetype/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/lodsve/lodsve-maven-archetype.svg)](https://github.com/lodsve/lodsve-maven-archetype/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/lodsve/lodsve-maven-archetype.svg)](https://github.com/lodsve/lodsve-maven-archetype/network)
