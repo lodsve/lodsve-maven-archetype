@@ -32,7 +32,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=hulk.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DarchetypeGroupId=com.lodsve.archetype
       -DarchetypeArtifactId=lodsve-archetype-quickstart
       -DarchetypeVersion=${archetypeVersion}
@@ -46,7 +46,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=hulk.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DarchetypeGroupId=com.lodsve.archetype
       -DarchetypeArtifactId=lodsve-archetype-mybatis
       -DarchetypeVersion=${archetypeVersion}
@@ -60,7 +60,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=hulk.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DarchetypeGroupId=com.lodsve.archetype
       -DarchetypeArtifactId=lodsve-archetype-nacos
       -DarchetypeVersion=${archetypeVersion}   
@@ -73,7 +73,7 @@
       -Dversion=1.0-SNAPSHOT
       -Dpackage=com.xxx
       -Dauthor=hulk.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DserverAppName=demo-server
       -DserverContextPath=/demo-server
       -DarchetypeGroupId=com.lodsve.archetype
@@ -88,7 +88,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=haoke.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DapiGroupId=com.xxx
       -DapiArtifactId=xxx-api
       -DapiVersion=1.0-SNAPSHOT
@@ -104,7 +104,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=haoke.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DapiGroupId=com.xxx
       -DapiArtifactId=xxx-api
       -DapiVersion=1.0-SNAPSHOT
@@ -121,12 +121,12 @@
       |-------------------|-------------------------------------|-----------------|
    | groupId           | 要创建工程的groupId                  | com.lodsve      |
    | artifactId        | 要创建工程的artifactId               | demo            |
-   | version           | 要创建工程的version                  | 1.0.0-SNAPSHOT  |
+   | version           | 要创建工程的version                  | 1.0.4-SNAPSHOT  |
    | port              | SpringBoot工程的port                 | 8080            |
    | contextPath       | context path                   | /demo           |
    | package           | 要创建工程的base package             | com.lodsve.demo |
    | author            | 要创建工程的作者                       | hulk.sun        |
-   | bootVersion       | 使用`lodsve-boot`的版本号            | 1.0.0-SNAPSHOT  |
+   | bootVersion       | 使用`lodsve-boot`的版本号            | 1.0.4-SNAPSHOT  |
    | apiGroupId        | 创建的API包GroupId（仅在RPC使用）        | com.lodsve      |
    | apiArtifactId     | 创建的API包ArtifactId（仅在RPC使用）     | demo-api        |
    | apiVersion        | 创建的API包版本号（仅在RPC使用）            | 1.0.-SNAPSHOT   |

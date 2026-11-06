@@ -34,7 +34,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=hulk.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DarchetypeGroupId=com.lodsve.archetype
       -DarchetypeArtifactId=lodsve-archetype-quickstart
       -DarchetypeVersion=${archetypeVersion}
@@ -48,7 +48,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=hulk.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DarchetypeGroupId=com.lodsve.archetype
       -DarchetypeArtifactId=lodsve-archetype-mybatis
       -DarchetypeVersion=${archetypeVersion}
@@ -62,7 +62,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=hulk.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DarchetypeGroupId=com.lodsve.archetype
       -DarchetypeArtifactId=lodsve-archetype-nacos
       -DarchetypeVersion=${archetypeVersion}   
@@ -75,7 +75,7 @@
       -Dversion=1.0-SNAPSHOT
       -Dpackage=com.xxx
       -Dauthor=hulk.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DserverAppName=demo-server
       -DserverContextPath=/demo-server
       -DarchetypeGroupId=com.lodsve.archetype
@@ -90,7 +90,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=haoke.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DapiGroupId=com.xxx
       -DapiArtifactId=xxx-api
       -DapiVersion=1.0-SNAPSHOT
@@ -106,7 +106,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=haoke.sun
-      -DbootVersion=1.0.0-SNAPSHOT
+      -DbootVersion=1.0.4-SNAPSHOT
       -DapiGroupId=com.xxx
       -DapiArtifactId=xxx-api
       -DapiVersion=1.0-SNAPSHOT
@@ -123,12 +123,12 @@
 |-------------------|---------------------------------------------------------------------|-----------------|
 | groupId           | The groupId for the project to be created                           | com.lodsve      |
 | artifactId        | The artifactId for the project to be created                        | demo            |
-| version           | The version for the project to be created	                          | 1.0.0-SNAPSHOT  |
+| version           | The version for the project to be created	                          | 1.0.4-SNAPSHOT  |
 | port              | Port for the Spring Boot project	                                   | 8080            |
 | contextPath       | Context path	                                                       | /demo           |
 | package           | Base package for the project to be created                          | com.lodsve.demo |
 | author            | Author of the project to be created                                 | hulk.sun        |
-| bootVersion       | Version number of lodsve-boot to be used                            | 1.0.0-SNAPSHOT  |
+| bootVersion       | Version number of lodsve-boot to be used                            | 1.0.4-SNAPSHOT  |
 | apiGroupId        | The groupId for the API package to be created (only used in RPC)    | com.lodsve.demo |
 | apiArtifactId     | The artifactId for the API package to be created (only used in RPC) | demo-api        |
 | apiVersion        | The version for the API package to be created (only used in RPC)    | 1.0.-SNAPSHOT   |
