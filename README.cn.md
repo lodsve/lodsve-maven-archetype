@@ -77,7 +77,7 @@
       -DcontextPath=/xxx
       -Dpackage=com.xxx
       -Dauthor=hulk.sun
-      -DbootVersion=4.1.2
+      -DbootVersion=1.0.4-SNAPSHOT
       -DarchetypeGroupId=com.lodsve.archetype
       -DarchetypeArtifactId=lodsve-archetype-mongodb
       -DarchetypeVersion=${archetypeVersion}
