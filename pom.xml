@@ -442,6 +442,7 @@
 
     <modules>
         <module>lodsve-archetype-mybatis</module>
+        <module>lodsve-archetype-mongodb</module>
         <module>lodsve-archetype-nacos</module>
         <module>lodsve-archetype-quickstart</module>
         <module>lodsve-archetype-rpc-api</module>

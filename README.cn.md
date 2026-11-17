@@ -19,6 +19,9 @@
 3. lodsve-archetype-quickstart
 
    [![Maven Central](https://img.shields.io/maven-central/v/com.lodsve.archetype/lodsve-archetype-quickstart.svg)](https://search.maven.org/artifact/com.lodsve.archetype/lodsve-archetype-quickstart)
+4. lodsve-archetype-mongodb
+
+   MongoDB Repository 与具名数据源切换示例。
 
 ## 用法
 
@@ -64,9 +67,23 @@
       -DarchetypeGroupId=com.lodsve.archetype
       -DarchetypeArtifactId=lodsve-archetype-nacos
       -DarchetypeVersion=${archetypeVersion}   
+
+   ### 4. MongoDB
+   mvn archetype:generate
+      -DgroupId=com.xxx
+      -DartifactId=xxx-project
+      -Dversion=1.0-SNAPSHOT
+      -Dport=8080
+      -DcontextPath=/xxx
+      -Dpackage=com.xxx
+      -Dauthor=hulk.sun
+      -DbootVersion=4.1.2
+      -DarchetypeGroupId=com.lodsve.archetype
+      -DarchetypeArtifactId=lodsve-archetype-mongodb
+      -DarchetypeVersion=${archetypeVersion}
       
-   ### 4. RPC（顺序：api -> server -> client）
-   ### 4.1. RPC-api
+   ### 5. RPC（顺序：api -> server -> client）
+   ### 5.1. RPC-api
    mvn archetype:generate
       -DgroupId=com.xxx
       -DartifactId=xxx-api
@@ -79,7 +96,7 @@
       -DarchetypeGroupId=com.lodsve.archetype
       -DarchetypeArtifactId=lodsve-archetype-rpc-api
       -DarchetypeVersion=${archetypeVersion} 
-   ### 4.2. RPC-server
+   ### 5.2. RPC-server
    mvn archetype:generate
       -DgroupId=com.xxx
       -DartifactId=xxx-server
@@ -95,7 +112,7 @@
       -DarchetypeGroupId=com.lodsve.archetype
       -DarchetypeArtifactId=lodsve-archetype-rpc-server
       -DarchetypeVersion=${archetypeVersion}
-   ### 4.3. RPC-client
+   ### 5.3. RPC-client
    mvn archetype:generate
       -DgroupId=com.xxx
       -DartifactId=xxx-client
